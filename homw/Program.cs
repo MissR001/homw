@@ -10,7 +10,7 @@ string? number = Console.ReadLine();
 
 void CheckingNumber(string number){
   if (number[0]==number[4] || number[1]==number[3]){
-    Console.WriteLine($"Ваше число: {number} - палиндром.");
+    Console.WriteLine($"Ваше число: {number} - является алиндром.");
   }
   else Console.WriteLine($"Ваше число: {number} - введенное число не является палиндромом.");
 }
@@ -18,19 +18,18 @@ void CheckingNumber(string number){
 if (number!.Length == 5){
   CheckingNumber(number);
 }
-else Console.WriteLine($"Введите  подходящее число");
+else Console.WriteLine($"Введите подходящее число");
 */
 
-int num = 644764;
- int digit1 = num /100000;
- int digit2 = num / 10000 % 10;
- int digit3 = num / 1000 % 10;
+int num = 12821; 
+int digit1=num/10000;
+int digit2=num/1000 %10;
+int digit3= num/100 %10;
+int digit4=num/10%10;
+int digit5=num %100 /10; 
 
- int digit4 = num / 100 % 10;
- int digit41 = num % 1000 / 100; //644764 % 1000 = 764 / 100 = 7.64
 
- int digit5 = num / 10 % 10;
-int digit51 = num % 100 / 10; // 6447_64 % 100 = 64 /10 = 6.4
+
 
 // Задача 21: Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 // A (3,6,8); B (2,1,-7), -> 15.84
